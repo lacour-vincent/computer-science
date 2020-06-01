@@ -1,0 +1,21 @@
+const _merge = (left: unknown[], right: unknown[]): unknown[] => {
+	const arr: unknown[] = [];
+	let il = 0;
+	let ir = 0;
+	while (il < left.length && ir < right.length) {
+		const value = left[il] < right[ir] ? left[il++] : right[ir++];
+		arr.push(value);
+	}
+	return [...arr, ...left.slice(il), ...right.slice(ir)];
+};
+
+const merge = (src: unknown[]): unknown[] => {
+	const arr = [...src];
+	if (arr.length < 2) return arr;
+	const middle = Math.floor(arr.length / 2);
+	const left = merge(arr.slice(0, middle));
+	const right = merge(arr.slice(middle));
+	return _merge(left, right);
+};
+
+export default merge;

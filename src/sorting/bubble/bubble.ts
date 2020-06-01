@@ -5,7 +5,7 @@ const bubble = (src: unknown[]): unknown[] => {
 	let isSorted: boolean;
 	do {
 		isSorted = true;
-		for (let i = 0; i < arr.length; i = i + 1) {
+		for (let i = 0; i < arr.length; i++) {
 			if (arr[i] > arr[i + 1]) {
 				swap(arr, i, i + 1);
 				isSorted = false;

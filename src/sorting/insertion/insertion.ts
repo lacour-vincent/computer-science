@@ -1,12 +1,12 @@
 const insertion = (src: unknown[]): unknown[] => {
 	const arr = [...src];
-	for (let i = 1; i < arr.length; i = i + 1) {
-		const current = arr[i];
-		while (i > 0 && arr[i - 1] > current) {
+	for (let i = 1; i < arr.length; i++) {
+		const value = arr[i];
+		while (i > 0 && arr[i - 1] > value) {
 			arr[i] = arr[i - 1];
-			i = i - 1;
+			i--;
 		}
-		arr[i] = current;
+		arr[i] = value;
 	}
 	return arr;
 };
