@@ -1,4 +1,5 @@
 import bubble from './bubble/bubble';
+import selection from './selection/selection';
 
 export const swap = (arr: unknown[], i: number, j: number) => {
 	const tmp = arr[i];
@@ -6,4 +7,4 @@ export const swap = (arr: unknown[], i: number, j: number) => {
 	arr[j] = tmp;
 };
 
-export { bubble };
+export { bubble, selection };
