@@ -1,0 +1,21 @@
+{
+	"name": "computer-science",
+	"author": "Lacour Vincent",
+	"version": "1.0.0",
+	"description": "Collection of classic computer science algorithms and paradigms written in TypeScript.",
+	"scripts": {
+		"test": "jest --verbose"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@types/jest": "^25.2.3",
+		"jest": "^26.0.1",
+		"ts-jest": "^26.1.0",
+		"typescript": "^3.9.3"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/lacour-vincent/computer-science.git"
+	},
+	"license": "MIT"
+}
