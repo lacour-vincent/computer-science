@@ -4,27 +4,31 @@ Collection of classic computer science algorithms and paradigms written in TypeS
 
 ## Sorting
 
-Bubble Sort
-Selection Sort
-Insertion Sort
-Merge Sort
-Quick Sort
+| Name      |    Best    |  Average   |   Worst    |  Memory  |       Stable       |
+| --------- | :--------: | :--------: | :--------: | :------: | :----------------: |
+| Bubble    |    `n`     |   `n^2`    |   `n^2`    |   `1`    | :white_check_mark: |
+| Selection |   `n^2`    |   `n^2`    |   `n^2`    |   `1`    |        :x:         |
+| Insertion |    `n`     |   `n^2`    |   `n^2`    |   `1`    | :white_check_mark: |
+| Merge     | `n log(n)` | `n log(n)` | `n log(n)` |   `n`    | :white_check_mark: |
+| Quick     | `n log(n)` | `n log(n)` |   `n^2`    | `log(n)` |        :x:         |
+| Heap      | `n log(n)` | `n log(n)` | `n log(n)` |   `1`    |        :x:         |
+
 
 ## Data structure
 
-Linked List
-Doubly Linked List
-Stacks
-Queues
-Hash Map
-Binary Search Tree
-Binary Heap
+- Linked List
+- Doubly Linked List
+- Stacks
+- Queues
+- Hash Map
+- Binary Search Tree
+- Binary Heap
 
 ## Algorithms
 
-Binary Search
-Breadth First Search (BFS)
-Depth First Search (DFS)
+- Binary Search
+- Breadth First Search (BFS)
+- Depth First Search (DFS)
 
 ## References
 
