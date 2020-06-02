@@ -3,6 +3,7 @@ import selection from './selection/selection';
 import insertion from './insertion/insertion';
 import merge from './merge/merge';
 import quick from './quick/quick';
+import heap from './heap/heap';
 
 export const swap = (arr: unknown[], i: number, j: number) => {
 	const tmp = arr[i];
@@ -10,4 +11,4 @@ export const swap = (arr: unknown[], i: number, j: number) => {
 	arr[j] = tmp;
 };
 
-export { bubble, selection, insertion, merge, quick };
+export { bubble, selection, insertion, merge, quick, heap };
