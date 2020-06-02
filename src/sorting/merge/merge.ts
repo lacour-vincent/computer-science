@@ -12,7 +12,7 @@ const _merge = (left: unknown[], right: unknown[]): unknown[] => {
 const merge = (src: unknown[]): unknown[] => {
 	const arr = [...src];
 	if (arr.length < 2) return arr;
-	const middle = Math.floor(arr.length / 2);
+	const middle = Math.floor(0.5 * arr.length);
 	const left = merge(arr.slice(0, middle));
 	const right = merge(arr.slice(middle));
 	return _merge(left, right);
