@@ -1,6 +1,6 @@
 import { swap } from '../index';
 
-const heapify = (arr: unknown[], node: number, size: number) => {
+const heapify = (arr: number[], node: number, size: number) => {
 	let largest = node;
 	const left = 2 * node + 1;
 	const right = 2 * node + 2;
@@ -12,8 +12,7 @@ const heapify = (arr: unknown[], node: number, size: number) => {
 	}
 };
 
-const heap = (src: unknown[]): unknown[] => {
-	const arr = [...src];
+const heap = (arr: number[]): number[] => {
 	const N = arr.length;
 	for (let i = Math.floor(N / 2) - 1; i >= 0; i--) heapify(arr, i, N);
 	for (let j = N - 1; j > 0; j--) {

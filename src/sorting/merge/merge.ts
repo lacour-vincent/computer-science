@@ -1,5 +1,5 @@
-const _merge = (left: unknown[], right: unknown[]): unknown[] => {
-	const arr: unknown[] = [];
+const _merge = (left: number[], right: number[]): number[] => {
+	const arr: number[] = [];
 	let il = 0;
 	let ir = 0;
 	while (il < left.length && ir < right.length) {
@@ -9,8 +9,7 @@ const _merge = (left: unknown[], right: unknown[]): unknown[] => {
 	return [...arr, ...left.slice(il), ...right.slice(ir)];
 };
 
-const merge = (src: unknown[]): unknown[] => {
-	const arr = [...src];
+const merge = (arr: number[]): number[] => {
 	if (arr.length < 2) return arr;
 	const middle = Math.floor(0.5 * arr.length);
 	const left = merge(arr.slice(0, middle));

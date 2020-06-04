@@ -1,7 +1,6 @@
 import { swap } from '../index';
 
-const bubble = (src: unknown[]): unknown[] => {
-	const arr = [...src];
+const bubble = (arr: number[]): number[] => {
 	let isSorted: boolean;
 	do {
 		isSorted = true;

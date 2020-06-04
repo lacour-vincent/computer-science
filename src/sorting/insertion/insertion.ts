@@ -1,5 +1,4 @@
-const insertion = (src: unknown[]): unknown[] => {
-	const arr = [...src];
+const insertion = (arr: number[]): number[] => {
 	for (let i = 1; i < arr.length; i++) {
 		const value = arr[i];
 		while (i > 0 && arr[i - 1] > value) {

@@ -1,6 +1,6 @@
 import { swap } from '../index';
 
-const partition = (arr: unknown[], left: number, right: number): number => {
+const partition = (arr: number[], left: number, right: number): number => {
 	const pivot = arr[Math.floor(0.5 * (right + left))];
 	let i = left;
 	let j = right;
@@ -12,9 +12,8 @@ const partition = (arr: unknown[], left: number, right: number): number => {
 	return i;
 };
 
-const quick = (src: unknown[]): unknown[] => {
-	const arr = [...src];
-	const _quick = (arr: unknown[], left: number, right: number): unknown[] => {
+const quick = (arr: number[]): number[] => {
+	const _quick = (arr: number[], left: number, right: number): number[] => {
 		if (arr.length <= 1) return arr;
 		const pivot = partition(arr, left, right);
 		if (left < pivot - 1) _quick(arr, left, pivot - 1);
