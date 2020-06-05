@@ -111,6 +111,36 @@ describe('LinkedList', () => {
 		});
 	});
 
+	describe('clear', () => {
+		it('should clear an empty linked-list', () => {
+			const list = new LinkedList();
+			list.clear();
+			expect([...list]).toEqual([]);
+		});
+
+		it('should clear the linked-list', () => {
+			const list = createLinkedList();
+			list.clear();
+			expect([...list]).toEqual([]);
+		});
+	});
+
+	describe('values', () => {
+		it('should return undefined with empty linked-list', () => {
+			const list = new LinkedList();
+			const generator = list.values();
+			expect(generator.next().value).toBe(undefined);
+		});
+
+		it('should return each value of the linked-list in asc order', () => {
+			const list = createLinkedList();
+			const generator = list.values();
+			expect(generator.next().value).toBe(1);
+			expect(generator.next().value).toBe(2);
+			expect(generator.next().value).toBe(3);
+		});
+	});
+
 	describe('iterator', () => {
 		it('should return the array representation of an empty linked-list', () => {
 			const list = new LinkedList();
