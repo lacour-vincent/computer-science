@@ -4,7 +4,7 @@
 	"version": "1.0.0",
 	"description": "Collection of classic computer science algorithms and paradigms written in TypeScript.",
 	"scripts": {
-		"test": "jest --verbose"
+		"test": "jest"
 	},
 	"dependencies": {},
 	"devDependencies": {
