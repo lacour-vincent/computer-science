@@ -1,5 +1,5 @@
 class Queue<T> {
-	public data: Array<T> = [];
+	private data: Array<T> = [];
 
 	get length(): number {
 		return this.data.length;
@@ -24,7 +24,7 @@ class Queue<T> {
 	}
 
 	public clear() {
-		this.data = [];
+		this.data.length = 0;
 	}
 
 	public *values() {
