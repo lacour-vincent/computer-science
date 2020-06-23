@@ -20,9 +20,10 @@ Collection of classic computer science algorithms and paradigms written in TypeS
 - Doubly Linked List
 - Stacks
 - Queues
-- Hash Map
+- Heap
 - Binary Search Tree
-- Binary Heap
+- Directed Graph
+- Undirect Graph
 
 ## Algorithms
 

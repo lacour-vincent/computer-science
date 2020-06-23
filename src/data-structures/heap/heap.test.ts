@@ -31,7 +31,6 @@ describe('Heap', () => {
 		it('should return false with heap with elements', () => {
 			const heap = createHeap();
 			expect(heap.isEmpty()).toBe(false);
-			expect(heap.isEmpty()).toBe(false);
 		});
 	});
 
