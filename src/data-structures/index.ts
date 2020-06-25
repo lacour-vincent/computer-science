@@ -4,6 +4,7 @@ import Stack from './stack/stack';
 import Queue from './queue/queue';
 import Heap from './heap/heap';
 import BinarySearchTree from './binary-search-tree/binary-search-tree';
+import Graph from './graph/graph';
 
 export const swap = (arr: number[], i: number, j: number) => {
 	const tmp = arr[i];
@@ -11,4 +12,4 @@ export const swap = (arr: number[], i: number, j: number) => {
 	arr[j] = tmp;
 };
 
-export { LinkedList, DoublyLinkedList, Stack, Queue, Heap, BinarySearchTree };
+export { LinkedList, DoublyLinkedList, Stack, Queue, Heap, BinarySearchTree, Graph };
