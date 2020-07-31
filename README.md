@@ -15,13 +15,40 @@ Collection of classic computer science algorithms and paradigms written in TypeS
 
 ## Data structure
 
--   Linked List
--   Doubly Linked List
--   Stacks
--   Queues
--   Heap
--   Binary Search Tree
--   Graph
+### Linked List
+<p align="center">
+  <img src="docs/linked-list.svg" />
+</p>
+
+### Doubly Linked List
+<p align="center">
+  <img src="docs/doubly-linked-list.svg" />
+</p>
+
+### Stack
+<p align="center">
+  <img width="280px" src="docs/stack.png" />
+</p>
+
+### Queue
+<p align="center">
+  <img width="280px" src="docs/queue.png" />
+</p>
+
+### Heap
+<p align="center">
+  <img width="280px" src="docs/heap.svg" />
+</p>
+
+### Binary Search Tree
+<p align="center">
+  <img width="280px" src="docs/binary-search-tree.jpg" />
+</p>
+
+### Graph
+<p align="center">
+  <img width="280px" src="docs/graph.svg" />
+</p>
 
 ## Algorithms
 
