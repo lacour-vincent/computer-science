@@ -1,3 +1,3 @@
-import binarySearch from './binary-search/binary-search';
+import binarySearch from "./binary-search/binary-search";
 
 export { binarySearch };
