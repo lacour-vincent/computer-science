@@ -1,11 +1,15 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
     "target": "esnext",
-    "lib": ["dom", "esnext"],
+    "lib": ["esnext"],
+    "types": ["vitest/globals"],
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
-    "strict": false,
+    "strict": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
     "esModuleInterop": true
   },
   "include": ["src/**/*"]

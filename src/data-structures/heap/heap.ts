@@ -73,6 +73,7 @@ class Heap {
     if (this.data.length === 1) return this.data.pop();
     const root = this.data[0];
     const tail = this.data.pop();
+    if (tail === undefined) return undefined;
     this.data[0] = tail;
     this.heapifyDown();
     return root;

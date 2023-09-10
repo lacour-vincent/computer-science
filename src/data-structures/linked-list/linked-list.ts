@@ -4,7 +4,7 @@ interface LinkedListNode<T> {
 }
 
 class LinkedList<T> {
-  private head: LinkedListNode<T> = null;
+  private head: LinkedListNode<T> | null = null;
 
   get length(): number {
     let current = this.head;
@@ -58,14 +58,14 @@ class LinkedList<T> {
       return data;
     }
 
-    let previous: LinkedListNode<T> = null;
+    let previous: LinkedListNode<T> | null = null;
     let i = 0;
     while (current !== null && i < index) {
       i++;
       previous = current;
       current = current.next;
     }
-    if (current === null) throw new RangeError();
+    if (current === null || previous === null) throw new RangeError();
     previous.next = current.next;
     return current.data;
   }

@@ -5,8 +5,8 @@ interface DoublyLinkedListNode<T> {
 }
 
 class DoublyLinkedList<T> {
-  private head: DoublyLinkedListNode<T> = null;
-  private tail: DoublyLinkedListNode<T> = null;
+  private head: DoublyLinkedListNode<T> | null = null;
+  private tail: DoublyLinkedListNode<T> | null = null;
 
   get length(): number {
     let current = this.head;
@@ -22,7 +22,7 @@ class DoublyLinkedList<T> {
     const node: DoublyLinkedListNode<T> = { previous: null, data: value, next: null };
     if (this.head === null) this.head = node;
     else {
-      this.tail.next = node;
+      this.tail!.next = node;
       node.previous = this.tail;
     }
     this.tail = node;
@@ -68,9 +68,9 @@ class DoublyLinkedList<T> {
       current = current.next;
     }
     if (current === null) throw new RangeError();
-    current.previous.next = current.next;
+    current.previous!.next = current.next;
     if (this.tail === current) this.tail = current.previous;
-    else current.next.previous = current.previous;
+    else current.next!.previous = current.previous;
     return current.data;
   }
 

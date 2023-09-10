@@ -6,15 +6,14 @@
   "scripts": {
     "type-check": "tsc --noEmit",
     "format-check": "prettier --check \"**/src/**/*.ts\"",
-    "test": "jest"
+    "validate": "yarn run type-check && yarn run format-check",
+    "test": "vitest run --config=vitest.config.ts"
   },
   "dependencies": {},
   "devDependencies": {
-    "@types/jest": "^27.4.1",
-    "jest": "^27.5.1",
-    "prettier": "^2.6.2",
-    "ts-jest": "^27.1.4",
-    "typescript": "^4.6.3"
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.4"
   },
   "repository": {
     "type": "git",

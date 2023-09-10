@@ -18,7 +18,7 @@ class Stack<T> {
     return this.data.pop();
   }
 
-  public peek(): T {
+  public peek(): T | undefined {
     if (this.isEmpty()) return undefined;
     return this.data[this.data.length - 1];
   }

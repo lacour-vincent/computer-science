@@ -6,10 +6,10 @@ interface BinarySearchTreeNode {
 }
 
 class BinarySearchTree {
-  private root: BinarySearchTreeNode = null;
+  private root: BinarySearchTreeNode | null = null;
 
   get length(): number {
-    const traverse = (node: BinarySearchTreeNode): number => {
+    const traverse = (node: BinarySearchTreeNode | null): number => {
       if (node === null) return 0;
       const { left, right } = node;
       return 1 + traverse(left) + traverse(right);
@@ -76,10 +76,10 @@ class BinarySearchTree {
     if (node === this.root) {
       this.root = replacement;
     } else {
-      if (node.value < parent.value) {
-        parent.left = replacement;
+      if (node.value < parent!.value) {
+        parent!.left = replacement;
       } else {
-        parent.right = replacement;
+        parent!.right = replacement;
       }
     }
     return true;
@@ -119,6 +119,7 @@ class BinarySearchTree {
   }
 
   public *values() {
+    if (this.root === null) return undefined;
     function* traverse(node: BinarySearchTreeNode): Generator {
       if (node === null) return;
       const { left, right, value } = node;
